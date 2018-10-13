@@ -1,0 +1,60 @@
+#wprtl-popup {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 9999;
+    opacity: 1;
+    position: fixed;
+    transition: opacity .2s;
+    background:rgba(0,0,0,.8);
+}
+
+#wprtl-popup button:focus,
+#wprtl-popup a:focus{
+    outline: 1px rgba(55, 137, 255, .4) solid;
+    box-shadow: 0px 0px 10px 5px rgba(55, 137, 255, .4);
+}
+
+#wprtl-popup[aria-hidden="true"] {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#wprtl-popup[aria-hidden="false"] {
+  opacity: 1;
+  visibility: visible;
+}
+
+.wprtl-popup__inner{
+    left: 0;
+    top: 15%;
+    right: 0;
+    width: 85%;
+    margin: 0 auto;
+    max-width: 600px;
+    position: absolute;
+}
+
+.wprtl-popup__image{
+    width: 100%;
+}
+
+#wprtl-popup__close{
+    top: -30px;
+    padding: 0;
+    width: 30px;
+    border: none;
+    right: -30px;
+    height: 30px;
+    position: absolute;
+    text-align: center;
+    background: transparent;
+    transition: background .2s;
+}
+
+#wprtl-popup__close:hover,
+#wprtl-popup__close:focus{
+    background:rgba(255,255,255,.2);
+}
